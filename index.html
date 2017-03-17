@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="clock.js"></script>
+</head>
+<body>
+<div class="timer">
+    <div class="break-container">
+        <div class="break length"><span class="control-text">Break Length</span><br><button class="minus" onclick="decrease(this)">-</button><span class="value break-value">5</span><button class="plus" onclick="increase(this)">+</button></div>
+        <div class="second length"><span class="control-text">Session Length</span><br><button class="minus" onclick="decrease(this)">-</button><span class="value session-value">25</span><button class="plus" onclick="increase(this)">+</button></div>
+    </div>
+
+
+
+    <div class="clock">
+        <div class='text'>
+            <p class="session">Session</p>
+            <p class="time"><span class="minutes">25</span>:<span class="seconds">00</span></p>
+        </div>
+        <div class="expander">
+        </div>
+        <input type="button" class="trigger" onclick="start()"/>
+    </div>
+    <div class="button">
+        <input type="button" class="reset" onclick="reset()" value="RESET"/>
+    </div>
+</div>
+
+</body>
+</html>
